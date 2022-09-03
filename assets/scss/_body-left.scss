@@ -1,0 +1,120 @@
+.body-left{
+    flex-basis: 30%;
+    @include mq(lg){
+        flex-basis: 36%;
+    }
+    @include mq(xs){
+        display: none;
+    }
+   
+}
+
+.explore{
+    background-color: #fff;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    @include mq(sm){
+        padding: 0 20px;
+        margin-bottom: 0;
+    }
+    ul{
+        li{
+            margin-bottom: 10px;
+            a{
+                color: #333;
+                font-weight: 500;
+                i{
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+
+}
+.left-title{
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+    @include mq(lg){
+        font-size: 17px;
+    }
+}
+.app{
+    background-color: #fff;
+    margin-bottom: 20px;
+    padding: 20px 10px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    @include mq(sm){
+        margin-bottom: 0;
+        padding: 0 10px;
+    }
+    h5{
+        margin-bottom: 0;
+    }
+
+}
+.buttons{
+    img{
+        max-width: 300px;
+    }
+}
+
+.suggested-people {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    @include mq(lg){
+        padding: 20px 10px;
+        white-space: nowwrap;
+    }
+
+}
+
+.people {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    img{
+        max-width: 30px;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+    }
+    p{
+        font-weight: bold;
+        font-size: 14px;
+    }
+}
+.suggested{
+    display: flex;
+    justify-content: space-between;
+    @include mq(md){
+        flex-direction: column;
+        gap: 20px;
+    }
+    a {
+        color: #d4d4d4;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding: 10px;
+        border: 1px solid #d2d2d2;
+        border-radius: 5px;
+        @include mq(md){
+            justify-content: space-between;
+            padding: 5px;
+
+        }
+    }
+}

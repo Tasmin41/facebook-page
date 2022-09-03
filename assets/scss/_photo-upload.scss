@@ -1,0 +1,206 @@
+.photo-upload{
+    .cntn-like{
+        .emoji{
+            margin-left: 5px;
+            font-weight: normal;
+            font-size: 13px;
+            i{
+                color:#C98917;
+            }
+        }
+    }
+    .react{
+        .love-react{
+            span{
+                color: red;
+            }
+        }
+    }
+}
+.photo{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-bottom: 40px;
+    margin-top: 20px;
+    img{
+        height: 100%;
+    }
+}
+.two-col{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+}
+.three-col{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5px;
+    .last-img{
+        position: relative;
+        &::before{
+            position:absolute;
+            content: "";
+            background-color: #333;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            opacity: 0.4;
+        }
+        span{
+            position: absolute;
+            color: #fff;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            -webkit-transform: translate(-50%,-50%);
+            -moz-transform: translate(-50%,-50%);
+            -ms-transform: translate(-50%,-50%);
+            -o-transform: translate(-50%,-50%);
+            font-weight: bold;
+            font-size: 14px;
+            z-index: 3;
+}
+    }
+}
+.love-react{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    i {
+        background-color: #E92344;
+        color: #fff;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 10px;
+    }
+}
+.profile-pic{
+    p{
+        color: #31415A;
+        
+    }
+    .nice-select{
+        padding-left: 0;
+    }
+    .pull-top{
+        gap: 0;
+    }
+    .like-user{
+        gap: 10px;
+    }
+    .cntn-like{
+        .emoji{
+            margin-left: 0;
+            font-size: 11px !important;
+        }
+    }
+    .love-react{
+        i{
+            background-color: #E92344;
+            
+            &.like{
+               
+                background-color: #15A1F8;
+            }
+        }
+    }
+    .react{
+        margin-top: 0;
+    }
+}
+.profile{
+    align-items: unset;
+   img{
+    max-width: 40px;
+    height: 40px;
+   }
+
+}
+.react-track{
+    display: flex;
+    gap: 20px;
+    align-items: flex-end;
+    margin: 30px 0 10px 0;
+    justify-content: space-between;
+}
+.all-react{
+    display: flex;
+    align-items: center;
+    position: relative;
+    .left-p{
+        left: 0;
+    }
+    .right-like{
+        padding-left: 20px;
+    }
+    .right-p{
+        left: 34px;
+    }
+    .middle-p{
+        left: 15px;
+    }
+    .right-love{
+        padding-left: 17px;
+    }
+    i {
+        color: #fff;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 10px;
+    }
+    .love{
+        i{
+            background-color: #E92344;
+        }
+    }
+    .like1{
+        i{
+            background-color: #15A1F8;
+        }
+    }
+    span{
+        margin-left: 10px;
+    }
+    p{
+        position: absolute;
+    }
+}
+.group{
+    i{
+        margin: 0 15px;
+        background-color: #31415A !important;
+        color: #fff;
+        padding: 6px;
+        font-size: 7px !important;
+    }
+    font-size: 13px;
+}
+.angry{
+    i{
+        color: #C98917;
+        font-size: 16px;
+    }
+    span{
+        color: #C98917;
+    }
+}
+.wow{
+    i{
+        color: #C98917;
+        font-size: 16px;
+    }
+    span{
+        color: #C98917;
+    }
+}
